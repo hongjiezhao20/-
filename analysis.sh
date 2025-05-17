@@ -41,8 +41,6 @@ while :; do
 	 bash protein_ca.sh
 	 bash protein_dry.sh
 	 ;;
-     
-     
     2)
      echo "请选择操作："
      echo "1. 三文件合并"
@@ -51,7 +49,7 @@ while :; do
      echo "4. 去水离子"
      echo "5. 返回上一步"
       read -p "请输入选项：" option02
-      
+      ;;
     3)
      echo "请选择操作："
      echo "1. α碳化和干化"
@@ -59,9 +57,8 @@ while :; do
      echo "3. 干化"
 	 echo "4. 返回上一步"
       read -p "请输入选项：" option03
-      
-      
-    4)
+      ;;
+      4)
 	 echo "请选择操作："
 	 echo "1. 全部"
      echo "2. rmsd"
@@ -71,7 +68,7 @@ while :; do
       read -p "请输入选项：" option04
     *)
       echo "无效选项，请重新输入！"
-      
+      ;;
   esac
    case $option02 in
     1）
@@ -83,25 +80,31 @@ while :; do
 	 bash combine2.sh
 	 bash combine3.sh
 	 return
+         ;;
 	2）
 	 cd $dir
 	 chmod +x combine1.sh
 	 bash combine1.sh
 	 return
+         ;;
 	3)
 	 cd $dir
 	 chmod +x combine2.sh
 	 bash combine2.sh
 	 return
+         ;;
 	4)
 	 cd $dir
 	 chmod +x combine3.sh
 	 bash combine3.sh
 	 return
+         ;;
 	5)
-	 ;;
+	 exit 0
+         ;;
 	*)
 	 echo "无效选项，请重新输入！"
+          ;;
   esac
   case $option03 in
     1)
@@ -111,16 +114,19 @@ while :; do
 	 bash protein_ca.sh
 	 bash protein_dry.sh
 	 return
+         ;; 
 	2)
 	  cd $dir
 	 chmod +x protein_ca.sh
 	 bash protein_ca.sh
 	 return
-	3)
+	;;
+        3)
 	 cd $dir
 	 chmod +x protein_dry.sh
 	 bash protein_dry.sh
 	 return
+         ;;
   esac
 done
 
