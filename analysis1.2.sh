@@ -58,16 +58,16 @@ while :; do
      echo "1. α碳化和干化"
      echo "2. α碳化"
      echo "3. 干化"
-	 echo "4. 返回上一步"
+     echo "4. 返回上一步"
       read -p "请输入选项：" option03
      ;; 
     4)
-	 echo "请选择操作："
-	 echo "1. 全部"
+     echo "请选择操作："
+     echo "1. 全部"
      echo "2. rmsd"
      echo "3. rmsf"
-	 echo "4. dccm_md"
-	 echo "5. 返回上一步"
+     echo "4. dccm_md"
+     echo "5. 返回上一步"
       read -p "请输入选项：" option04
      ;;	  
     *)
@@ -114,20 +114,20 @@ while :; do
 	 bash protein_ca.sh
 	 bash protein_dry.sh
 	 ;;
-	2)
+    2)
 	  cd $dir
 	 chmod +x protein_ca.sh
 	 bash protein_ca.sh
 	 ;;
-	3)
+    3)
 	 cd $dir
 	 chmod +x protein_dry.sh
 	 bash protein_dry.sh
 	 ;;
-	4)
+    4)
 	 return
 	 ;;
-	*)
+    *)
 	 echo "无效选项，请重新输入！"
 	 ;;
 	esac 
@@ -138,22 +138,22 @@ while :; do
 	 Rscript rmsf.R
 	 Rscript dccm_md.R
 	 ;;
-	2)
+    2)
 	 cd $dir
 	 Rscript rmsd.R
 	 ;;
-	3)
+    3)
 	 cd $dir
 	 Rscript rmsf.R
 	 ;;
-	4)
+    4)
 	 cd $dir
 	 Rscript dccm_md.R
 	 ;;
-	5)
+    5)
      	 return 
      	 ;;
-    	*)
+    *)
      	 echo "无效选项，请重新输入！"
 	 ;;
   esac
