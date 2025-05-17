@@ -121,6 +121,7 @@ while :; do
 	 chmod +x protein_dry.sh
 	 bash protein_dry.sh
 	 return
+  esac
 done
 
 
