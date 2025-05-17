@@ -24,8 +24,8 @@ while :; do
 
   case $option0 in
     0)
-      wget  https://raw.githubusercontent.com/hongjiezhao20/-/refs/heads/main/ananlysisdocument1.2.zip -O adz1.2.zip
-      unzip adz1.2.zip -d "$dir"
+      wget  https://raw.githubusercontent.com/hongjiezhao20/-/refs/heads/main/ananlysisdocument1.3.zip-O adz1.3.zip
+      unzip adz1.3.zip -d "$dir"
       echo "分析文件已下载并解压至 $dir"
       ;;
     1)
