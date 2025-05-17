@@ -29,133 +29,133 @@ while :; do
       echo "分析文件已下载并解压至 $dir"
       ;;
     1)
-	 cd $dir
-	 chmod +x combine1.sh
-	 chmod +x combine2.sh
-	 chmod +x combine3.sh
-	 chmod +x protein_ca.sh
-	 chmod +x protein_dry.sh
-	./combine1.sh
-	 bash combine2.sh
-	 bash combine3.sh
-	 bash protein_ca.sh
-	 bash protein_dry.sh
-	 Rscript rmsd.R
-	 Rscript rmsf.R
-	 Rscript dccm_md.R
-	 ;;
+      cd $dir
+      chmod +x combine1.sh
+      chmod +x combine2.sh
+      chmod +x combine3.sh
+      chmod +x protein_ca.sh
+      chmod +x protein_dry.sh
+      ./combine1.sh
+      ./combine2.sh
+      ./combine3.sh
+      ./protein_ca.sh
+      ./protein_dry.sh
+      Rscript rmsd.R
+      Rscript rmsf.R
+      Rscript dccm_md.R
+      ;;
     2)
-     echo "请选择操作："
-     echo "1. 三文件合并"
-     echo "2. α碳合并"
-     echo "3. 全合并"
-     echo "4. 去水离子"
-     echo "5. 返回上一步"
+      echo "请选择操作："
+      echo "1. 三文件合并"
+      echo "2. α碳合并"
+      echo "3. 全合并"
+      echo "4. 去水离子"
+      echo "5. 返回上一步"
       read -p "请输入选项：" option02
       ;;
     3)
-     echo "请选择操作："
-     echo "1. α碳化和干化"
-     echo "2. α碳化"
-     echo "3. 干化"
-     echo "4. 返回上一步"
+      echo "请选择操作："
+      echo "1. α碳化和干化"
+      echo "2. α碳化"
+      echo "3. 干化"
+      echo "4. 返回上一步"
       read -p "请输入选项：" option03
-     ;; 
+      ;; 
     4)
-     echo "请选择操作："
-     echo "1. 全部"
-     echo "2. rmsd"
-     echo "3. rmsf"
-     echo "4. dccm_md"
-     echo "5. 返回上一步"
+      echo "请选择操作："
+      echo "1. 全部"
+      echo "2. rmsd"
+      echo "3. rmsf"
+      echo "4. dccm_md"
+      echo "5. 返回上一步"
       read -p "请输入选项：" option04
-     ;;	  
+      ;;	  
     *)
-     echo "无效选项，请重新输入！"
-     ;; 
+      echo "无效选项，请重新输入！"
+      ;; 
   esac
    case $option02 in
      1)
-         cd $dir
-	 chmod +x combine1.sh
-	 chmod +x combine2.sh
-	 chmod +x combine3.sh
-	 ./combine1.sh
-	 ./combine2.sh
-	 ./combine3.sh
-	 ;;
-    2)
-	 cd $dir
-	 chmod +x combine1.sh
-	 bash combine1.sh
-	 ;;
-    3)
-	 cd $dir
-	 chmod +x combine2.sh
-	 bash combine2.sh
-	 ;;
-    4)
-	 cd $dir
-	 chmod +x combine3.sh
-	 bash combine3.sh
-	 ;;
-    5)
-	 return
-	 ;;
-	*)
-	 echo "无效选项，请重新输入！"
-	 ;;
+       cd $dir
+       chmod +x combine1.sh
+       chmod +x combine2.sh
+       chmod +x combine3.sh
+       ./combine1.sh
+       ./combine2.sh
+       ./combine3.sh
+       ;;
+     2)
+       cd $dir
+       chmod +x combine1.sh
+       ./combine1.sh
+       ;;
+     3)
+       cd $dir
+       chmod +x combine2.sh
+       ./combine2.sh
+       ;;
+     4)
+       cd $dir
+       chmod +x combine3.sh
+       bash combine3.sh
+       ;;
+     5)
+       return
+       ;;
+     *)
+       echo "无效选项，请重新输入！"
+       ;;
   esac
   case $option03 in
     1)
-	  cd $dir
-	 chmod +x protein_ca.sh
-	 chmod +x protein_dry.sh
-	 bash protein_ca.sh
-	 bash protein_dry.sh
-	 ;;
+      cd $dir
+      chmod +x protein_ca.sh
+      chmod +x protein_dry.sh
+      ./protein_ca.sh
+      ./protein_dry.sh
+      ;;
     2)
-	  cd $dir
-	 chmod +x protein_ca.sh
-	 bash protein_ca.sh
-	 ;;
+      cd $dir
+      chmod +x protein_ca.sh
+      ./protein_ca.sh
+      ;;
     3)
-	 cd $dir
-	 chmod +x protein_dry.sh
-	 bash protein_dry.sh
-	 ;;
+      cd $dir
+      chmod +x protein_dry.sh
+      ./protein_dry.sh
+      ;;
     4)
-	 return
-	 ;;
+      return
+      ;;
     *)
-	 echo "无效选项，请重新输入！"
-	 ;;
-	esac 
+      echo "无效选项，请重新输入！"
+      ;;
+ esac 
   case $option04 in
     1)
-	 cd $dir
-	 Rscript rmsd.R
-	 Rscript rmsf.R
-	 Rscript dccm_md.R
-	 ;;
+      cd $dir
+      Rscript rmsd.R
+      Rscript rmsf.R
+      Rscript dccm_md.R
+      ;;
     2)
-	 cd $dir
-	 Rscript rmsd.R
-	 ;;
+      cd $dir
+      Rscript rmsd.R
+      ;;
     3)
-	 cd $dir
-	 Rscript rmsf.R
-	 ;;
+      cd $dir
+      Rscript rmsf.R
+      ;;
     4)
-	 cd $dir
-	 Rscript dccm_md.R
-	 ;;
+      cd $dir
+      Rscript dccm_md.R
+      ;;
     5)
-     	 return 
-     	 ;;
+      return 
+      ;;
     *)
-     	 echo "无效选项，请重新输入！"
-	 ;;
+      echo "无效选项，请重新输入！"
+      ;;
   esac
 done
 
