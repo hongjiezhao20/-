@@ -75,7 +75,7 @@ while :; do
      ;; 
   esac
    case $option02 in
-   	 1)
+     1)
          cd $dir
 	 chmod +x combine1.sh
 	 chmod +x combine2.sh
@@ -85,25 +85,25 @@ while :; do
 	 bash combine3.sh
 	 return
 	 ;;
-	2)
+    2)
 	 cd $dir
 	 chmod +x combine1.sh
 	 bash combine1.sh
 	 return
 	 ;;
-	3)
+    3)
 	 cd $dir
 	 chmod +x combine2.sh
 	 bash combine2.sh
 	 return
 	 ;;
-	4)
+    4)
 	 cd $dir
 	 chmod +x combine3.sh
 	 bash combine3.sh
 	 return
 	 ;;
-	5)
+    5)
 	 return
 	 ;;
 	*)
