@@ -66,7 +66,7 @@ while :; do
 	 echo "4. dccm_md"
 	 echo "5. 返回上一步"
       read -p "请输入选项：" option04
-    *)
+      *)
       echo "无效选项，请重新输入！"
       ;;
   esac
@@ -102,8 +102,8 @@ while :; do
 	5)
 	 exit 0
          ;;
-	*)
-	 echo "无效选项，请重新输入！"
+	 *)
+      echo "无效选项，请重新输入！"
           ;;
   esac
   case $option03 in
@@ -127,6 +127,9 @@ while :; do
 	 bash protein_dry.sh
 	 return
          ;;
+	*)
+      echo "无效选项，请重新输入！"
+      ;;
   esac
 done
 
