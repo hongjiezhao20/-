@@ -51,15 +51,6 @@ while :; do
      echo "4. 去水离子"
      echo "5. 返回上一步"
       read -p "请输入选项：" option02
-	  
-      
-      python3 "$dir/3.py" -s $start1 -n $num1
-      cp amber.sh $dir
-      chmod +x "$dir/amber.sh"
-      cd $dir
-      CUDA_VISIBLE_DEVICES=$gpu_id bash "$dir/amber.sh" > "$dir/amber.log" 2>&1 &
-      disown
-      nvidia-smi
       
     3)
      echo "请选择操作："
@@ -78,12 +69,6 @@ while :; do
 	 echo "4. dccm_md"
 	 echo "5. 返回上一步"
       read -p "请输入选项：" option04
-      wget https://s3.tebi.io/s3.ag.cn.eu.org/kill_amber.sh -O kill_amber.sh
-      chmod +x kill_amber.sh
-      echo "请输入要杀死的GPU号："
-      read -p "GPU号： " gpu_id
-      bash kill_amber.sh $gpu_id
-      
     *)
       echo "无效选项，请重新输入！"
       
