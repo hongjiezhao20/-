@@ -75,8 +75,8 @@ while :; do
      ;; 
   esac
    case $option02 in
-    1）
-     cd $dir
+   	 1)
+         cd $dir
 	 chmod +x combine1.sh
 	 chmod +x combine2.sh
 	 chmod +x combine3.sh
@@ -85,7 +85,7 @@ while :; do
 	 bash combine3.sh
 	 return
 	 ;;
-	2）
+	2)
 	 cd $dir
 	 chmod +x combine1.sh
 	 bash combine1.sh
@@ -162,11 +162,12 @@ while :; do
 	 return
 	 ;;
 	5)
-     return 
-     ;;
-    *)
-     echo "无效选项，请重新输入！"
+     	 return 
+     	 ;;
+    	*)
+     	 echo "无效选项，请重新输入！"
 	 ;;
+  esac
 done
 
 
