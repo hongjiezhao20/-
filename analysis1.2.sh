@@ -24,7 +24,7 @@ while :; do
 
   case $option0 in
     0)
-      wget  -O model.zip
+      wget  https://raw.githubusercontent.com/hongjiezhao20/-/refs/tags/2/ananlysisdocument.zip -O model.zip
       unzip model.zip -d "$dir"
       echo "分析文件已下载并解压至 $dir"
       ;;
