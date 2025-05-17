@@ -80,9 +80,9 @@ while :; do
 	 chmod +x combine1.sh
 	 chmod +x combine2.sh
 	 chmod +x combine3.sh
-	 bash combine1.sh
-	 bash combine2.sh
-	 bash combine3.sh
+	 ./combine1.sh
+	 ./combine2.sh
+	 ./combine3.sh
 	 ;;
     2)
 	 cd $dir
