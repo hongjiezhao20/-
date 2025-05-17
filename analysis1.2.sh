@@ -134,21 +134,27 @@ while :; do
   case $option04 in
     1)
       cd $dir
-      Rscript rmsd.R
-      Rscript rmsf.R
-      Rscript dccm_md.R
+      chmod +x rmsd.R
+      chmod +x rmsf.R
+      chmod +x dccm_md.R
+      ./rmsd.R
+      ./rmsf.R
+      ./dccm_md.R
       ;;
     2)
       cd $dir
-      Rscript rmsd.R
+      chmod +x rmsd.R
+      ./rmsd.R
       ;;
     3)
       cd $dir
-      Rscript rmsf.R
+      chmod +x rmsf.R
+      ./rmsf.R
       ;;
     4)
       cd $dir
-      Rscript dccm_md.R
+      chmod +x dccm_md.R
+      ./dccm_md.R
       ;;
     5)
       return 
