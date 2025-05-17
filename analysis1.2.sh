@@ -35,7 +35,7 @@ while :; do
 	 chmod +x combine3.sh
 	 chmod +x protein_ca.sh
 	 chmod +x protein_dry.sh
-	 bash combine1.sh
+	./combine1.sh
 	 bash combine2.sh
 	 bash combine3.sh
 	 bash protein_ca.sh
@@ -83,25 +83,21 @@ while :; do
 	 bash combine1.sh
 	 bash combine2.sh
 	 bash combine3.sh
-	 return
 	 ;;
     2)
 	 cd $dir
 	 chmod +x combine1.sh
 	 bash combine1.sh
-	 return
 	 ;;
     3)
 	 cd $dir
 	 chmod +x combine2.sh
 	 bash combine2.sh
-	 return
 	 ;;
     4)
 	 cd $dir
 	 chmod +x combine3.sh
 	 bash combine3.sh
-	 return
 	 ;;
     5)
 	 return
@@ -117,19 +113,16 @@ while :; do
 	 chmod +x protein_dry.sh
 	 bash protein_ca.sh
 	 bash protein_dry.sh
-	 return
 	 ;;
 	2)
 	  cd $dir
 	 chmod +x protein_ca.sh
 	 bash protein_ca.sh
-	 return
 	 ;;
 	3)
 	 cd $dir
 	 chmod +x protein_dry.sh
 	 bash protein_dry.sh
-	 return
 	 ;;
 	4)
 	 return
@@ -144,22 +137,18 @@ while :; do
 	 Rscript rmsd.R
 	 Rscript rmsf.R
 	 Rscript dccm_md.R
-	 return
 	 ;;
 	2)
 	 cd $dir
 	 Rscript rmsd.R
-	 return
 	 ;;
 	3)
 	 cd $dir
 	 Rscript rmsf.R
-	 return
 	 ;;
 	4)
 	 cd $dir
 	 Rscript dccm_md.R
-	 return
 	 ;;
 	5)
      	 return 
