@@ -22,7 +22,7 @@ while :; do
   echo "4. R语言"
   read -p "请输入选项： " option0
 
-  case $option0 in
+case $option0 in
     0)
       wget  https://raw.githubusercontent.com/hongjiezhao20/-/refs/heads/main/ananlysisdocument1.3.zip-O adz1.3.zip
       unzip adz1.3.zip -d "$dir"
@@ -74,7 +74,7 @@ while :; do
       echo "无效选项，请重新输入！"
       ;; 
   esac
-   case $option02 in
+  case $option02 in
      1)
        cd $dir
        chmod +x combine1.sh
@@ -131,7 +131,7 @@ while :; do
       echo "无效选项，请重新输入！"
       ;;
  esac 
-  case $option04 in
+ case $option04 in
     1)
       cd $dir
       chmod +x rmsd.R
