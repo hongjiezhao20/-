@@ -46,28 +46,28 @@ case $option0 in
       ;;
     2)
       echo "请选择操作："
-      echo "1. 三文件合并"
-      echo "2. α碳合并"
-      echo "3. 全合并"
-      echo "4. 去水离子"
-      echo "5. 返回上一步"
+      echo "21. 三文件合并"
+      echo "22. α碳合并"
+      echo "23. 全合并"
+      echo "24. 去水离子"
+      echo "25. 返回上一步"
       read -p "请输入选项：" option02
       ;;
     3)
       echo "请选择操作："
-      echo "1. α碳化和干化"
-      echo "2. α碳化"
-      echo "3. 干化"
-      echo "4. 返回上一步"
+      echo "31. α碳化和干化"
+      echo "32. α碳化"
+      echo "33. 干化"
+      echo "34. 返回上一步"
       read -p "请输入选项：" option03
       ;; 
     4)
       echo "请选择操作："
-      echo "1. 全部"
-      echo "2. rmsd"
-      echo "3. rmsf"
-      echo "4. dccm_md"
-      echo "5. 返回上一步"
+      echo "41. 全部"
+      echo "42. rmsd"
+      echo "43. rmsf"
+      echo "44. dccm_md"
+      echo "45. 返回上一步"
       read -p "请输入选项：" option04
       ;;	  
     *)
@@ -75,7 +75,7 @@ case $option0 in
       ;; 
   esac
   case $option02 in
-     1)
+     21)
        cd $dir
        chmod +x combine1.sh
        chmod +x combine2.sh
@@ -84,22 +84,22 @@ case $option0 in
        ./combine2.sh
        ./combine3.sh
        ;;
-     2)
+     22)
        cd $dir
        chmod +x combine1.sh
        ./combine1.sh
        ;;
-     3)
+     23)
        cd $dir
        chmod +x combine2.sh
        ./combine2.sh
        ;;
-     4)
+     24)
        cd $dir
        chmod +x combine3.sh
        bash combine3.sh
        ;;
-     5)
+     25)
        return
        ;;
      *)
@@ -107,24 +107,24 @@ case $option0 in
        ;;
   esac
   case $option03 in
-    1)
+    31)
       cd $dir
       chmod +x protein_ca.sh
       chmod +x protein_dry.sh
       ./protein_ca.sh
       ./protein_dry.sh
       ;;
-    2)
+    32)
       cd $dir
       chmod +x protein_ca.sh
       ./protein_ca.sh
       ;;
-    3)
+    33)
       cd $dir
       chmod +x protein_dry.sh
       ./protein_dry.sh
       ;;
-    4)
+    34)
       return
       ;;
     *)
@@ -132,7 +132,7 @@ case $option0 in
       ;;
  esac 
  case $option04 in
-    1)
+    41)
       cd $dir
       chmod +x rmsd.R
       chmod +x rmsf.R
@@ -141,22 +141,22 @@ case $option0 in
       ./rmsf.R
       ./dccm_md.R
       ;;
-    2)
+    42)
       cd $dir
       chmod +x rmsd.R
       ./rmsd.R
       ;;
-    3)
+    43)
       cd $dir
       chmod +x rmsf.R
       ./rmsf.R
       ;;
-    4)
+    44)
       cd $dir
       chmod +x dccm_md.R
       ./dccm_md.R
       ;;
-    5)
+    45)
       return 
       ;;
     *)
