@@ -40,9 +40,9 @@ while :; do
       ./combine3.sh
       ./protein_ca.sh
       ./protein_dry.sh
-      Rscript rmsd.R
-      Rscript rmsf.R
-      Rscript dccm_md.R
+      ./rmsd.R
+      ./rmsf.R
+      ./dccm_md.R
       ;;
     2)
       echo "请选择操作："
