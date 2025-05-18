@@ -35,6 +35,9 @@ while :; do
       chmod +x combine3.sh
       chmod +x protein_ca.sh
       chmod +x protein_dry.sh
+      chmod +x rmsd.R
+      chmod +x rmsf.R
+      chmod +x dccm_md.R
       ./combine1.sh
       ./combine2.sh
       ./combine3.sh
