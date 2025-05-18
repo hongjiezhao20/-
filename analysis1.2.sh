@@ -14,7 +14,7 @@ while :; do
     fi
   fi
   echo "$dir" > last_dir.txt
-  echo "请选择操作："
+  echo "请选择操作($dir)："
   echo "0. 下载文件"
   echo "1. 全分析"
   echo "2. 合并"
